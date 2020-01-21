@@ -1,0 +1,22 @@
+h1
+{
+font-family: calibri;
+font-size: 30px;
+font-style: normal;
+font-weight: bold;
+color: grey;
+text-decoration: underline;
+text-align: center;
+text-transform: uppercase;
+color: #AFEEEE;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+p
+{
+font-family: verdana;
+font-size: 20px;
+font-style: italic;
+text-indent: 50px;/*we can give x% or we can give in xem's also*/
+text-shadow: 2px 2px #20B2AA;/*2d shadow*/
+color: #4682B4;
+}
