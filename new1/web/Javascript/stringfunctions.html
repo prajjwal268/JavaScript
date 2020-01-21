@@ -1,0 +1,40 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            str1="abc";
+            str2="bananas";
+            len=str1.length;
+            document.write("charAt: "+str1.charAt(len-1)+"<br><br>");
+            document.write("charcodeAt: "+str1.charCodeAt(1)+"<br><br>");
+            document.write("fromcharcode: "+String.fromCharCode(97,98,99)+"<br><br>");
+            document.write("indexof: "+str2.indexOf("a",2)+"<br><br>");
+            document.write("lastindexof: "+str2.lastIndexOf("a",2)+"<br><br>");
+            document.write(str2.match("man")+"<br><br>");
+            document.write(str2.replace("nan","man")+"<br><br>");
+            var txt="Hello World!";
+            document.write("<p>Big: "+txt.big()+"</p>");
+            
+            document.write("<p>Small: "+txt.small()+"</p>");
+
+            
+            document.write("<p>Big: "+txt.bold()+"</p>");
+            
+            document.write("<p>Big: "+txt.italics()+"</p>");
+
+            document.write("<p>Big: "+txt.fixed()+"</p>");
+            document.write("<p>Big: "+txt.strike()+"</p>");
+
+            document.write("<p>Big: "+txt.fontcolor("Red")+"</p>");
+            document.write("<p>Big: "+txt.fontsize(16)+"</p>");
+
+            document.write("<p>Big: "+txt.toLowerCase()+"</p>");
+            document.write("<p>Big: "+txt.toUpperCase()+"</p>");
+
+            document.write("<p>Big: "+txt.sub()+"</p>");
+            document.write("<p>Big: "+txt.sup()+"</p>");
+            </script>
+    </body>
+</html>

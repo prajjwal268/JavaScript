@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function newDoc(){
+                window.location.assign("http://www.capgemini.com");
+            }
+            function reloadPage()
+            {
+                window.location.reload();
+            }
+            function replaceDoc()
+            {
+                window.location.replace("http://www.sogeti.com");
+            }
+            </script>
+    </head>
+    <body>
+        <input type="button" value="Load new document" onclick="newDoc()"/>
+        <input type="button" value="Reload document" onclick="reloadPage()"/>
+        <input type="button" value="replace document" onclick="replaceDoc()"/>
+    </body>
+</html>

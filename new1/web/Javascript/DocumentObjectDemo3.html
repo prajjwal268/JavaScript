@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <script>
+            function confirmDetails(){
+                var name=window.document.getElementById("txtName").value;
+                var email=window.document.getElementById("txtEmail").value;
+                var timeslot=null;
+                if(window.document.getElementById("rdbSlot9").checked)
+                {
+                    timeslot="Slot1:9:00AM-12:00Noon";
+                }
+                else if(window.document.getElementById("rdbSlot1").checked)
+                {
+                    timeslot="Slot1:1:00PM-4:00Pm";
+                }
+                else{
+                    alert("Please Select Timeslot");
+                }
+                var termsAccepted=null;
+                if(document.getElementById("cbTermsAndConditions").checked)
+                {
+                    termsAccepted=true;
+                }
+                if(termsAccepted)
+                {
+                    alert("Your Details are: Name"+name+" Email addres:"+email+"Timeslot"+timeslot);
+                }
+            }
+            </script>
+    </head>
+    <body>
+        <form method="GET" id="myform1">
+        <span>Name:</span>
+        <span><input type="text" id="txtName"></span>
+        <br>
+        <span>Eamil:</span>
+        <span><input type="text" id="txtEmail"></span>
+        <br>
+        <span>tIME sLOT:</span>
+        <span><input type="radio" id="rdbSlot9" name="rdbTimeslot">Slot1: 9:00AM -12:00Noon</span>
+        <span><input type="radio" id="rdbSlot1" name="rdbTimeslot">Slot1: 1:00PM -4:00Noon</span>
+        <br>
+        <span>Location:</span>
+        <span>
+            <select id="ddLocation">
+                <option value="Select">Select</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Pune">Pune</option>
+                <option value="Bengluru">Bengluru</option>
+            </select>
+        </span>
+        <br>
+        <span>
+            <input type="checkbox" id="cbTermsAndConditions">
+        </span>
+        <span>
+            Accept Terms And Conditions
+        </span>
+        
+        <br>
+        <span>
+                <input type="button" id="btnConfirmDetails" value="Confirm and Submit" onclick="confirmDetails()">
+            </span>
+<br>
+        </form>
+    </body>
+</html>

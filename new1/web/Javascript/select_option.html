@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+            ls=document.getElementById("list1").value;
+            rs=document.getElementById("list2").value;
+            function leftshift()
+            {
+                rs.innerHTML=ls.innerHTML;
+            }
+            function rightshift()
+            {
+                ls.options[rs.options.length]=new Option(rs,'0',false,false);
+            }
+            </script>
+    </head>
+    <body>
+        <form method="POST" name="myform">
+            <span>fbox</span>
+            <span><select name="fbox" id="list1" size="6">
+                <option value="value1.1">value1.1</option>
+                <option value="value1.2">value1.2</option>
+                <option value="value1.3">value1.3</option>
+            </select></span>
+            <input type="button" value=">>" onclick="rightshift()"/>
+            <input type="button" value="<<" onclick="leftshift()"/>
+
+
+            <span>tbox</span>
+            <span><select id="list2" name="tbox" size="6">
+                <option value="value2.1">value2.1</option>
+                <option value="value2.2">value2.2</option>
+                <option value="value2.3">value2.3</option>
+            </select></span>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+    <body>
+            <form method="POST" action="tables.html">
+                    <div>
+                            <span>Name:</span>
+                            <span><input type="text" name="txtName"></span>
+                            </div>
+                            <div>
+                            <span>Email:</span>
+                            
+                            <span><input type="email" name="txtEmail"></span>
+                            </div>
+                            <div>
+                                       <span>Subscription Type:</span>
+                            <span><input type="radio" name="rdbSubscription" value="Paid">Paid<input type="radio" name="rdbSubscription" value="Free">Free</span>
+                            </div>
+                        <br>
+                        
+                        <div>
+                            <span>Catagory of books you love to read?</span>
+                            <span>
+                            <input type="checkbox" name="cbFiction" value="Fiction"/>Fiction
+                            </span>
+                            <span>
+                                    <input type="checkbox" name="cbBiography" value="Biography"/>Biography
+                                    </span>
+                                    <span>
+                            <input type="checkbox" name="cbPhilosophy" value="Philosophy"/>Philosophy
+                            </span>
+                        </div>
+                        <div>
+                            <span>Address</span>
+                            <span><textarea rows="5" cols="20"></textarea></span>
+                        </div>
+                        <div>
+                            <span>Frequency for book circulation?</span>
+                            <span>
+                                <select name="ddlBookCirculationFrquency">
+                                        <option>Select</option>
+                                    <option>Weekly</option>
+                                    <option>Fortnightly</option>
+                                    <option>Monthly</option>
+                                </select>
+                            </span>
+                        </div>
+                        <br>
+                        <div>
+                            <span>
+                                <input type="button" name="btnSave" value="Register Me"/>
+                                <input type="submit" name="btnSubmit" value="Register Me"/>
+                                <input type="reset" name="btnReset" value="Reset"/>
+                            </span>
+                        </div>
+            </form>
+    </body>
+</html>

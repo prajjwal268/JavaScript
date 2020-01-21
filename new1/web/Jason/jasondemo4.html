@@ -1,0 +1,16 @@
+<html>
+    <body onload="convert();">
+        <script>
+        function convert()
+        {
+            var data={};
+            data.title="Capgemini";
+            data.Examples=500;
+            var jasons=JSON.stringify(data);
+            alert(jasons);
+            var JSONObject=JSON.parse(jasons);
+            console.log(JSONObject);
+        }
+        </script>
+    </body>
+</html>

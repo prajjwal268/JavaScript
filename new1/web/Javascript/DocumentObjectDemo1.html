@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>
+            function fetchText()
+            {
+                para=document.getElementsByTagName("p");
+                
+                alert("paragraph along with Html Tags: "+para[0].innerHTML);
+                alert("paragraph Text only: "+para[0].innerText);
+                
+            }
+            function fetchText1()
+            {
+                para1=document.getElementById("p1");
+                
+                alert("paragraph along with Html Tags: "+para1.innerHTML);
+                alert("paragraph Text only: "+para1.innerText);
+                
+            }
+            function fetchText2()
+            {
+                para2=document.getElementsByName("p2");
+                
+                alert("paragraph along with Html Tags: "+para2[0].innerHTML);
+                alert("paragraph Text only: "+para2[0].innerText);
+                
+            }
+            </script>
+    </head>
+    <body>
+        <p onclick="fetchText()"><b>This is a paragraph</b></p>
+        <p id="p1" onclick="fetchText1()"><b>This is a paragraph2</b></p>
+        <p id="p2" onclick="fetchText2()"><b>This is a paragraph3</b></p>
+    </body>
+</html>

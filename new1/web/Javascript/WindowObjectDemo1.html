@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            var anotherWindow=null;
+            function createWindow()
+            {
+                anotherWindow=window.open("","","toolbar=no,status=no,width=200,height=100");
+                if(anotherWindow!=null)
+                {
+                    var newContent="<html><head><title>Another Widnow</title></head>"
+                    newContent+="<body><h3>another Window</h3>"
+                        newContent+="<form><input type='button' value='close' onClick='self.close()'></form>"
+                            newContent+="</body></html>"
+                            anotherWindow.document.write(newContent)
+                }
+            }
+            </script>
+    </head>
+    <body>
+        <p id="openWindow" Value="New Window"
+        onClick="createWindow()">click here to open new window</p>
+    
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <script>
+            function openIt()
+            {
+                myWindow=open('','mywin','height=300,width=300,scrollbars=yes');
+                myWindow.document.writeln("<html><head><title>FUN</title></head><body>");
+                myWindow.document.writeln("<table bgcolor='#ffcc66' border='1' width='600'><tr><td>");
+                myWindow.document.writeln("<h1>JavaScript Window Methods</h1><br><br><br><br><br>");
+                myWindow.document.writeln("</tr></td></table></body></html>");
+                myWindow.document.close();
+                myWindow.focus();
+                     
+            }
+            function moveIt()
+            {
+                if((window.myWindow)&&(myWindow.closed==false))
+                    myWindow.moveTo(document.testform.moveX.value,document.testform.moveY.value);
+            }
+            function resizeIt()
+            {
+                if((window.myWindow)&&(myWindow.closed==false))
+                    myWindow.resizeTo(document.testform.height.value,document.testform.width.value);
+            }
+            </script>
+
+    </head>
+    <body>
+        <form name="testform" id="testform" action="#" method="get">
+         <input type="button" value="Open Window" onclick="openIt();"/>
+         <input type="button" value="Close Window" onclick="myWindow.close();"/>
+         <input type="button" value="Focus Window" onclick="if (myWindow) myWindow.focus();"/>
+         <input type="button" value="Blur Window" onclick="if(myWindow) myWindow.blur();"/>
+         <input type="button" value="Defocus Window"  onclick="if(myWindow) myWindow.blur();"/>
+         <span>X:</span>
+         <span>
+             <input type ="text" size="4" name="moveX" id="moveX" value="0"/>
+
+         </span>
+         <span>Y:</span>
+         <span>
+             <input type type="text" size="4" name="moveY" id="moveY" value="0"/>
+
+         </span>
+         <span>
+             <input type="button" name="moveTo" id="moveTo" value="Move To" onclick="moveIt()">
+         </span>
+         <span>Height:</span>
+         <span>
+             <input type type="text" size="4" name="height" id="height" value="0"/>
+
+         </span><span>Width:</span>
+         <span>
+             <input type type="text" size="4" name="width" id="width" value="0"/>
+
+         </span>
+         <span>
+                <input type="button" name="resizeTo" id="resizeTo" value="Resize To" onclick="resizeIt()">
+            </span>
+   
+
+         
+             
+        </form>
+    </body>
+</html>

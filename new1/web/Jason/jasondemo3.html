@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <script>
+            function newy(){
+
+            
+            var student={"name":document.myform.elements["txtname"].value,"name1":document.myform.elements["txtemail"].value,
+            "name2":document.myform.elements["txtid"].value,"name3":document.myform.elements["options"].value
+            };
+            document.write(student.name+" "+student.name1+" "+student.name2+" "+student.name3+" ");
+            document.write("<table border=1><thead><th>Name</th> </thead> <tbody> <tr><td>"+student.name+"</td></tr></tbody></table>");
+
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <thead>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Id</th>
+            <th>Select</th></thead>
+            <tbody>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+            </tbody>
+        </table>
+    <form name="myform" method="GET">
+       
+            <Span>
+                Name:
+            </Span>
+            <span>
+                <input type="text" id="txtname"/>
+            </span>
+        <br>
+        
+                <Span>
+                    Id:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </Span>
+                <span>
+                    <input type="text" id="txtid"/>
+                </span>
+            
+           <br>
+                    <Span>
+                        Email:
+                    </Span>
+                    <span>
+                        <input type="email" id="txtemail"/>
+                    </span>
+                <br>
+                    <span>
+                        Word:
+                    </span>
+                    <span>
+                    <select id="options">
+                        <option value="Hi">Hi</option>
+                        <option value="Hi1">Hi1</option>
+                        <option value="Hi2">Hi2</option>
+
+                    </select></span> 
+                    <br>
+                    <span><input type="button" value="SUBMIT" onclick="newy()"></span>   
+                
+    </form>
+    </body>
+</html>

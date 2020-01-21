@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+        var students={
+            "Maths":[{
+                "name":"Manish","age":30,"marks":66
+            },{
+                "name":"Anol","age":33,"marks":80
+            }],"Science":[{
+                "name":"Manish","age":30,"marks":80
+            },{
+                "name":"Anol","age":33,"marks":89
+            }]
+        };
+        document.write("MATHS Marks:");
+        for(i=0;i<students.Maths.length;i++)
+        {
+            document.write(students.Maths[i].name+" - "+students.Maths[i].age+"-"+students.Maths[i].marks);
+            document.writeln("<br>");
+        }
+        document.write("Science Marks:");
+        for(i=0;i<students.Science.length;i++)
+        {
+            document.write(students.Science[i].name+" - "+students.Science[i].age+"-"+students.Science[i].marks);
+            document.writeln("<br>");
+        }
+        </script>
+    </head>
+</html>

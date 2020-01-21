@@ -1,0 +1,14 @@
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size:40px;
+    color: burlywood;
+    background-color: yellow;
+    background: url('workplace.jpg') no-repeat ;
+    width:200px;
+    height:150px;
+    overflow:scroll;
+    word-wrap:break-word;
+    text-align:right;
+    float:left;
+}

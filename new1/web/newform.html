@@ -1,0 +1,91 @@
+<html>
+    <body>
+        <form>
+            <div>
+                <span>
+                    Name:
+                </span>
+                <span>
+                    <input type="text" name="txtName" placeholder="Naam" autofocus required>
+                </span>
+            </div>
+            <div>
+                    <span>
+                        Email:
+                    </span>
+                    <span>
+                        <input type="email" name="txtEmail">
+                    </span>
+                </div>
+                <div>
+                        <span>
+                            Number:
+                        </span>
+                        <span>
+                            <input type="number" name="txtNumber" min=1 max=100 step=2>
+                        </span>
+                    </div>
+                    <div>
+                            <span>
+                                Choose Jersey Color:
+                            </span>
+                            <span>
+                                <input type="color" name="txtcolor">
+                            </span>
+                        </div>
+                        <div>
+                                <span>
+                                    Search net
+                                </span>
+                                <span>
+                                    <input type="search" name="txtsearch">
+                                </span>
+                            </div>
+
+                          <div>
+                            <span>
+                                Choose difficulty level:
+                            </span>
+                            <span>
+                                <input type="range" name="txtdifficulty">
+                            </span>
+                        </div>
+                        <div>
+                                <span>
+                                    Select Country:
+                                </span>
+                                <span>
+                                    <input type="text" name="ddlcountry" list="country"/>
+                                    <datalist id="country">
+                                        <option value="india"></option>
+                                        <option value="australia"></option>
+                                        <option value="us"></option>
+                                        <option value="canada"></option>
+                                    </datalist>
+                                </span>
+                            </div>
+                    <div>
+                            <div>
+                                    <span>
+                    Date of birth:
+                                    </span>
+                                    <span>
+                                        <input type="date" name="txtdate" min="" max="2002-01-02">
+                                    </span>
+                                </div>
+                                <div>
+                                        <span>
+                                            Time slot for participants:
+                                        </span>
+                                        <span>
+                                            <input type="time" name="txttime">
+                                        </span>
+                                    </div>
+                            <span>
+                                <input type="submit" name="submit" value="Reg"/>
+                                <input type="reset" name="reset" value="Reset"/>
+                            </span>
+                        </div>
+        </form>
+    </body>
+</html>
