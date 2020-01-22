@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>
+            Employee Details
+        </title>
+    </head>
+    <body>
+        <form name="myform" >
+            <table border="1px" style="background-color:lightblue;outline: 1px dashed;outline-offset:2px" align="center">
+                    <tr>
+                            <td align="center"><b>Name</b></td>
+                            <td><input type="text" maxlength=20 name="Name"></td>
+                        </tr>
+                        <tr>
+                                <td align="center"><b>Employee Code</b></td>
+                                <td><input type="text" maxlength=4 name="Code"></td>
+                            </tr>
+                            <tr>
+                                    <td align="center"><b>Department</b></td>
+                                    <td><input type="radio"  name="Department" value="Admin">Admin
+                                    <br>
+                                    <input type="radio"  name="Department" value="HR">HR
+                                    <br>
+                                    <input type="radio"  name="Department" value="Technical">Technical
+                                    <br>
+                                    <input type="radio"  name="Department" value="Accounts">Accounts
+                                    <br>
+                                </td>
+                                </tr>
+                                <tr>
+                                        <td align="center"><b>date of Joining</b></td>
+                                        <td><input type="date" name="doj"></td>
+                                    </tr>
+                                    <tr>
+                                            <td><center><b>
+                                                Address</b>
+                                            </td></center>
+                                            <td>
+                                                <textarea style="overflow-y: scroll;" rows="8"></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b><center>Training Program attended</center></b></td>    
+                                            <td>
+                                                <input type="checkbox" name="checkit" value="HTML"> HTML <br/>
+                                                <input type="checkbox" name="checkit" value="Java">Java<br/>
+                                                <input type="checkbox" name="checkit" value=".net">.NET<br/>
+                                                <input type="checkbox" name="checkit" value="Client/Server">Client/Server<br/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><center><b>
+                                                Training need to be Attended</b>
+                                            </td></center>
+                                            <td>
+                                                <select name="program">
+                                                    <option value="js" selected>JavaScript</option>
+                                                    <option value="react">React</option>
+                                                    <option value="nodejs">NodeJS</option>
+                                                    <option value="firebase">Firebase</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><center><b>
+                                                Send the information at</b> 
+                                            </td></center>
+                                            <td>
+                                                <a href="mailto:rahul.vikash@capgemini.com">Rahul Vikash</a>
+                                            </td>
+                                        </tr>
+                            
+            </table>
+        </form>
+    </body>
+</html>
