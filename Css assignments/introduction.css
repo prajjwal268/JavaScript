@@ -1,0 +1,23 @@
+h1
+{
+	font-family: calibri;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: bold;
+	color: grey;
+	text-decoration: underline;
+    text-align: center;
+    text-transform:uppercase;
+    color:#f56c42;
+    text-shadow:2px 2px 3px blue,1px 1px 2px yellow, 1px 1px 5px magenta,0 0 5px blue, 0 0 5px darkblue;
+    
+}
+
+p
+{
+	font-family: verdana;
+	font-size: 20px;
+    font-style: italic;
+	text-indent: 40px;
+	text-shadow: 2px 2px green;
+}	

@@ -1,0 +1,25 @@
+body {
+    background-color: lavender;
+  }
+  
+  h1 {
+    color: #030a49;
+  }
+
+  div{
+    background-color: hsla(120, 100%, 50%, 0.5);
+    color: #030a49;
+  }
+  
+  p{
+    color: rgb(0,0,255);
+  }
+  p.one{
+      background-color: rgba(255, 0, 0, 0.4);
+      color: #030a49;
+  }
+
+#p2{
+      background-color:hsl(120,100%,50%);
+      color: #030a49;
+}
