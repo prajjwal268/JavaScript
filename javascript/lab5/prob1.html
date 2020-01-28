@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>
+            form for adjustment
+        </title>
+        <script>
+            var anotherwindow=null;
+            // var width=document.myform.width.value;
+            // var height=document.myform.elements["height"].value;
+            // var left=document.myform.elements["left"].value;
+            // var top=document.myform.elements["top"].value;
+            function newwindow()
+            {
+             var width=document.myform.elements["width"].value;
+            var height=document.myform.elements["height"].value;
+            var left=document.myform.elements["left"].value;
+            var top=document.myform.elements["top"].value;
+                anotherwindow=window.open("","","toolbar=no,status=no,width=10,height=10");
+                anotherwindow.document.writeln("<html><body>This is a new window</body></html>");
+                if((window.anotherwindow)&&(window.closed==false))
+                {
+                    anotherwindow.resizeTo(width,height);
+                   
+                }
+                anotherwindow.moveTo(left,top);
+
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <form  name="myform">
+            <table border="1" cellspacing="10" cellpadding="10" bordercolor="blue">
+                <tr>
+                    <td colspan="4"><center><b>Create A New Window</b></center></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><center>Window Size</center></td>
+                </tr>
+                <tr>
+                    <td>Width:</td>
+                    <td><input type="text" size="4" name="width" ></td>
+                    <td>Height:</td>
+                    <td><input type="text" size="4" name="height" ></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><center>Position</center></td>
+                </tr>
+                <tr>
+                    <td>Left:</td>
+                    <td><input type="text" size="4" name="left" ></td>
+                    <td>Top:</td>
+                    <td><input type="text" size="4" name="top" ></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><center><input type="button" size="10" value="New Window" onclick="newwindow();"></center></td>
+                    <td><center><input type="reset" value="reset"></center></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

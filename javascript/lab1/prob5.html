@@ -1,0 +1,38 @@
+<html>
+<head><title>Embedding Script tag in HTML Document</title>
+
+<script>
+ var headVar = 10;
+    document.write("Script embedded in Head Tag<br/>");
+    document.write("------------------------------------<br/>");
+    document.write("Value stored in variable <i>headVar</i> is <b>"+headVar+"</b><br/>");
+</script>
+
+<hr>
+</head>
+<body>
+
+<script>
+/*
+TODO:define variable bodyVar and initialize it to some integer value and display the value as shown in the Fig 6
+*/
+var bodyVar = 65;
+    document.write("Script embedded in Body Tag<br/>");
+    document.write("------------------------------------<br/>");
+    document.write("Value stored in variable <i>bodyVar</i> is <b>"+bodyVar+"</b><br/>");
+</script>
+
+<hr>
+<script src="common.js">
+</script>
+
+<script>
+/*
+TODO:  Invoke the method addNos(headVar,bodyVar)  defined in common.js file and pass the two variables headVar and bodyVar defined in the head and the body script tag and display the added result as shown in the Fig 6
+*/
+addNos(headVar,bodyVar);
+</script>
+
+<hr>
+</body>
+</html>

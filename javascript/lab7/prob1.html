@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Purchase</title>
+        <script>
+            var newwindow=null;
+            function func()
+            {
+                var item1c=document.getElementById('item1').value;
+                var item2c=document.getElementById('item2').value;
+                var item3c=document.getElementById('item3').value;
+                var item4c=document.getElementById('item4').value;
+                if(item1c==""&&item2c==""&&item3c==""&&item4c=="")
+                    alert("no item selected");
+                else{
+                    newwindow=window.open("","","left=400,top=200,width=350,height=300");
+                    var newCont="<html><body><h1><center>INVOICE</center></h1>"
+                    + "<center><table border='1' id='orderTable'><tr><th>PRODUCT</th><th>QUANTITY</th><th>PRICE</th><th>TOTAL</th></tr>";
+
+                if(item1c)
+                {
+                    var qtyc=Number(document.getElementById('item1').value);
+                    var pricy=Number(document.getElementById('pricy1').innerText);
+                    var total=qtyc*pricy;
+                    newCont+="<tr><td>Barbie Doll</td><td>"+qtyc+"</td><td>"+pricy+"</td><td>"+ total.toString() +"</td></tr>";
+                }
+                if(document.getElementById('item2').value){
+                        var qtyc = Number(document.getElementById('item2').value);
+                        var pricy = Number(document.getElementById('pricy2').innerText);
+                        var total = qtyc*pricy;
+                        newCont+="<tr><td>Calculator</td><td>"+qtyc+"</td><td>"+pricy+"</td><td>"+ total.toString() +"</td></tr><";
+                  }   
+                    if(document.getElementById('item3').value){
+                        var qtyc = Number(document.getElementById('item3').value);
+                        var pricy = Number(document.getElementById('pricy3').innerText);
+                        var total = qtyc*pricy;
+                        neCont+="<tr><td>Mobile Phone</td><td>"+qtyc+"</td><td>"+pricy+"</td><td>"+ total.toString() +"</td></tr>";
+                    }   
+                    if(document.getElementById('item4').value){
+                        var qtyc = Number(document.getElementById('item4').value);
+                        var pricy = Number(document.getElementById('pricy4').innerText);
+                        var total = qtyc*pricy;
+                        neCont+="<tr><td>LG DVD</td><td>"+qtyc+"</td><td>"+pricy+"</td><td>"+ total.toString() +"</td></tr>";
+                    }                
+                    newCont+= "</table></center></body></html>";
+                    newwindow.document.write(newCont);
+                }
+
+            }
+        </script>
+    </head>
+    <h1>PRODUCTS</h1>
+    <body style="background-color: aqua;">
+        <form name="myform" method="POST">
+        <table border=1px id="mytable" cellspacing=4 >
+           <tr><center> <th><b>Name</b></th>
+            <th><b>Description</b></th>
+            <th><b>pricy</b></th>
+            <th><b>Qty</b></th></center></tr>
+            <tr>
+                <td>Barbie Doll</td>
+                <td>Beautiful</td>
+                <td id="pricy1">20</td>
+                <td><input type="text" size="10" name="item1" id="item1"></td>
+            </tr>
+            <tr>
+                <td>Calculator</td>
+                <td>Calculator with latest features</td>
+                <td id="pricy2">30</td>
+                <td><input type="text" size="10" name="item2" id="item2"></td>
+            </tr>
+            <tr>
+                <td>Mobile Phone</td>
+                <td>Camera,Java,Games,GPRS</td>
+                <td id="pricy3">40</td>
+                <td><input type="text" size="10" name="item3" id="item3"></td>
+            </tr>
+            <tr> 
+                <td>LG DVD</td>
+                <td>5 disc changer</td>
+                <td id="pricy4">50</td>
+                <td><input type="text" size="10" name="item4" id="item4"></td>
+            </tr>
+        </table>
+        <input type="button" value="ORDER" size=5 onclick="func()">
+        </form>
+    </body>
+
+</html>

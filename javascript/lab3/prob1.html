@@ -1,0 +1,27 @@
+<html>
+    <head> <title>Date</title></head>
+    <body>
+        <script>
+            var d=new Date();
+            var days=new Array(7);
+            days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+            var i=days[d.getDay()];
+            var months=new Array(12);
+            months=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+            var j=months[d.getMonth()];
+            var date = d.getDate();
+                var hour = d.getHours();
+                var min = d.getMinutes();
+                var sec = d.getSeconds();
+                var year = d.getFullYear();
+                document.write(i+" "+j+" "+date+" "+hour+":"+min+":"+sec+" "+year);
+                if(hour<12)
+                    document.write("<br/>Good Morning");
+                else if(hour<=17)
+                    document.write("<br/>Good Afternoon");
+                else
+                    document.write("<br/>Good Evening");
+
+            </script>
+    </body>
+</html>

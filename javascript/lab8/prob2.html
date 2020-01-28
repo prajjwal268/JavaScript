@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <script>
+            var productPrice = {'Television': 20000, 'Laptop': 30000, 'Phone':10000, 'Soap':40, 'Powder':90};
+            function showList(){
+                
+                var selectedCategory = document.getElementById('categoryOptions').value;
+                
+                var x = document.getElementById('productOptions');
+                
+                x.options.length = 0;
+
+                if(selectedCategory=="Electronics"){
+                    var newOption = document.createElement("option");
+                    newOption.text = "Television";
+                    x.add(newOption);
+                    var newOption1 = document.createElement("option");
+                    newOption1.text = "Laptop";
+                    x.add(newOption1);
+                    var newOption2 = document.createElement("option");
+                    newOption2.text = "Phone";
+                    x.add(newOption2);
+                }
+
+                if(selectedCategory=="Grocery"){
+                    var newOption = document.createElement("option");
+                    newOption.text = "Soaps";
+                    x.add(newOption);
+                    var newOption1 = document.createElement("option");
+                    newOption1.text = "Powder";
+                    x.add(newOption1);
+                }
+            }
+
+            function calulatePrice(){
+                var selectedOption = document.getElementById('productOptions').value;
+                var getPrice = productPrice[selectedOption];
+                var Quantity = parseInt(document.getElementById('Quantity').value);
+                var totalPrice = getPrice*Quantity;
+
+                document.getElementById('finalPrice').value = totalPrice;
+
+                
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <div style="background-color: #00bbff; width: 300px; height: 220px" >
+                <h1 style="color: white">Product Details</h1>
+                <div style="background-color: 00bbff; width: 250px; height: 120px; border: 15px solid white">
+                    <form>
+                        <table>
+                            <tr>
+                                <td>Category:</td>
+                                <td><pre>       </pre></td>
+                                <td><select id="categoryOptions" onchange ="showList();">
+                                    <option>Select</option>
+                                    <option>Electronic</option>
+                                    <option>Grocery</option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <td>Product:</td>
+                                <td><pre>       </pre></td>
+                                <td><select id="productOptions">
+                                    <option>-------</option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <td>Quantity:</td>
+                                <td><pre>       </pre></td>
+                                <td><input type="text" size="10" id="Quantity"></td>
+                            </tr>
+                            <tr>
+                                <td>Total Price:</td>
+                                <td><pre>       </pre></td>
+                                <td><input type="text" size="10" id="finalPrice" readonly/></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="Submit" onclick="calulatePrice();"></td>
+                                <td><pre>       </pre></td>
+                                <td><input type="reset" value="Clear"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </center>
+    </body>
+</html>
